@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/11.0.1" fx:controller="project.Controller">
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <Pane prefHeight="492.0" prefWidth="760.0">
+         <children>
+            <Button fx:id="button" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#loadImg" text="Wczytaj litery" />
+            <TextField fx:id="p" alignment="CENTER_RIGHT" layoutX="597.0" layoutY="14.0" text="0.8" />
+            <Button fx:id="setButton" layoutX="538.0" layoutY="14.0" mnemonicParsing="false" text="Ustaw" />
+            <TableView fx:id="table" layoutX="20.0" layoutY="59.0" prefHeight="419.0" prefWidth="721.0">
+              <columns>
+                <TableColumn prefWidth="211.0" text="name" />
+                <TableColumn prefWidth="264.0" text="similarity" />
+                  <TableColumn prefWidth="245.0" text="neuron" />
+              </columns>
+            </TableView>
+         </children>
+      </Pane>
+   </children>
+</GridPane>
